@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../components/FormDialog.css";
 import { professors as profsData, subjects } from '../data/mockData';
 import '../pages/pages.css';
 import Modal from '../components/Modal';

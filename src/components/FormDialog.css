@@ -1,0 +1,96 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog-box {
+  background: #fff;
+  padding: 2rem;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.dialog-box h2 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.dialog-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dialog-box input,
+.dialog-box select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+
+.dialog-box input:focus,
+.dialog-box select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.dialog-actions button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.dialog-actions .save-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.dialog-actions .save-btn:hover {
+  background: #0056b3;
+}
+
+.dialog-actions .cancel-btn {
+  background: #eee;
+  color: #333;
+}
+
+.dialog-actions .cancel-btn:hover {
+  background: #ddd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../components/FormDialog.css";
 import { streams as streamsData, programs } from '../data/mockData';
 import '../pages/pages.css';
 import Modal from '../components/Modal';
