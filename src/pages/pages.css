@@ -1,0 +1,15 @@
+.page { padding:12px; }
+.card-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:12px; margin-top:12px; }
+.table { width:100%; border-collapse: collapse; margin-top:12px; background:#fff; border-radius:8px; overflow:hidden }
+.table th, .table td { padding:12px 10px; border-bottom:1px solid #eee; text-align:left }
+.controls { display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+.controls input, .controls select, .search { padding:8px 12px; border-radius:8px; border:1px solid #ddd; min-width:160px; }
+.btn { padding:8px 12px; border-radius:6px; border:none; cursor:pointer; }
+.btn.primary { background:#2d6cdf; color:#fff }
+.card { background:#fff; border-radius:8px; padding:14px; box-shadow:0 1px 6px rgba(0,0,0,0.06) }
+.small { color:#666; font-size:0.9rem }
+@media (max-width:900px){
+  .controls { flex-direction:column; align-items:stretch; }
+  .card-grid { grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); }
+  .page { padding:10px; }
+}

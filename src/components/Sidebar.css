@@ -1,0 +1,17 @@
+/* Sidebar.css */
+.sidebar {
+  width: 220px;
+  background:#2f3640;
+  color:#fff;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  transition: width .25s ease;
+}
+.sidebar.collapsed { width:70px; }
+.logo { font-weight:700; margin-bottom:20px; text-align:center; }
+nav { display:flex; flex-direction:column; gap:8px; }
+.nav { display:flex; align-items:center; gap:12px; padding:10px; color:#fff; text-decoration:none; border-radius:8px; transition:background .15s; }
+.nav:hover { background: rgba(255,255,255,0.04); }
+.nav.active { background:#40739e; font-weight:600; }
+.i { font-size:18px; }
